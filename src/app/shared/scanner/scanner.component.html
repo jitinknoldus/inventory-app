@@ -1,0 +1,17 @@
+<ion-content id="container" class="ion-text-center">
+
+  <ion-card class="card" *ngIf="result && !scanActive">
+    <ion-card-title>
+      Product
+    </ion-card-title>
+    <ion-header>{{result}}</ion-header>
+  </ion-card>
+
+  <ion-button   (click)="startScanner()" [hidden]="scanActive" *ngIf="!scanActive">
+    Start Scan
+  </ion-button>
+
+
+
+
+</ion-content>
